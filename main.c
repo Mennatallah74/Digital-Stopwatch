@@ -41,7 +41,6 @@ int main(void)
 ISR(TIMER0_OVF_vect)
 {
 	overflow++;
-	TCNT0=0;
 	if(overflow == 3906)
 	{
 
